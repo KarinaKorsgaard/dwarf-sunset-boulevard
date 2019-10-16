@@ -1,0 +1,35 @@
+<template>
+  <!--<div class="newOrder">
+    <content-box @clicked="startOrder">
+      <template v-slot:content>Click to create a new order</template>
+      <template v-slot:button-name>Create new order</template>
+    </content-box>
+  </div>-->
+  <button id="createOrderButton" @click="startOrder">Create new order</button>
+</template>
+
+<script>
+// @ is an alias to /src
+import ContentBox from "@/components/ContentBox.vue";
+
+export default {
+  name: "createNewOrder",
+  mounted() {},
+  components: {
+    ContentBox
+  },
+  methods: {
+    startOrder() {
+      this.$store.commit("orderState", "FOOD");
+    }
+  }
+};
+</script>
+<style lang="scss" scoped>
+#createOrderButton {
+  margin: 20px 0 0 0;
+  @include large {
+    margin-left: 20px;
+  }
+}
+</style>

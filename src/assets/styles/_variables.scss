@@ -1,0 +1,31 @@
+$primary: #BA2329;
+$secondary: #007DDB;
+$grey: #f2f2f2;
+$textcolor: #333333;
+
+$breakpoints: (
+  mobile: 400px,
+  laptop: 768px,
+  desktop: 900px
+);
+
+// 0 - mobile
+@mixin small {
+  @media (max-width: map-get($breakpoints, mobile) - 1) {
+    @content;
+  }
+}
+
+// mobile - laptop
+@mixin medium {
+  @media (min-width: map-get($breakpoints, mobile)) {
+    @content;
+  }
+}
+
+// laptop -->
+@mixin large {
+  @media (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
