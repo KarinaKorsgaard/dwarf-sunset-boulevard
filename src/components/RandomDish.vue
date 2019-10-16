@@ -47,7 +47,7 @@ export default {
   .image {
     width: 100%;
     height: 70%;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
   }
 }
