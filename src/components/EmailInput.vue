@@ -1,8 +1,8 @@
 <template>
   <div class="email">
-	  <p>Enter your email</p>
+    <p>Enter your email</p>
     <input v-model="email" :placeholder="email == '' ? 'Enter email' : email" />
-    <button v-if="state==undefined" @click="find">Find previous order</button>
+    <button v-if="state == undefined" @click="find">Find previous order</button>
   </div>
 </template>
 
@@ -42,17 +42,17 @@ export default {
 <style lang="scss" scoped>
 .email {
   button {
-	margin: 20px auto;
-	width: auto;
-	padding-left: 20px;
-	padding-right: 20px;
-	float:left;
+    margin: 20px auto;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
   }
 }
 input {
   height: 50px;
   width: 280px;
   border: 1px $grey solid;
-  padding-left: 20px; 
+  padding-left: 20px;
 }
 </style>

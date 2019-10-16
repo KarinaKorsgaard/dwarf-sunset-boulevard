@@ -10,14 +10,11 @@
 
 <script>
 // @ is an alias to /src
-import ContentBox from "@/components/ContentBox.vue";
 
 export default {
   name: "createNewOrder",
   mounted() {},
-  components: {
-    ContentBox
-  },
+  components: {},
   methods: {
     startOrder() {
       this.$store.commit("orderState", "FOOD");

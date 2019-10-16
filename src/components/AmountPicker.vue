@@ -5,13 +5,13 @@
       <img
         :src="require('@/assets/arrow-left.png')"
         @click="getClippedAmount(-1)"
-        :class="{disabled: amount < 2}"
+        :class="{ disabled: amount < 2 }"
       />
-      <h2>{{amount}}</h2>
+      <h2>{{ amount }}</h2>
       <img
         :src="require('@/assets/arrow-right.png')"
         @click="getClippedAmount(1)"
-        :class="{disabled: amount > 9}"
+        :class="{ disabled: amount > 9 }"
       />
     </div>
   </section>
@@ -42,7 +42,7 @@ export default {
   width: 100%;
   max-width: 258px;
   p {
-	  margin-top: 0; 
+    margin-top: 0;
   }
 }
 img {

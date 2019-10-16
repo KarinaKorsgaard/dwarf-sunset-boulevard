@@ -1,6 +1,11 @@
 <template>
   <div id="datePickerContainer">
-    <date-picker v-model="date" :inline="true" :disabled-dates="disabledDates" id="datePicker"></date-picker>
+    <date-picker
+      v-model="date"
+      :inline="true"
+      :disabled-dates="disabledDates"
+      id="datePicker"
+    ></date-picker>
   </div>
 </template>
 

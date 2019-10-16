@@ -1,9 +1,17 @@
 <template>
   <div class="container">
-    <img v-if="isSeleted" :src="require('../assets/checkmark.png')" class="badge" />
-    <img v-else :src="require('../assets/checkmark-inactive.png')" class="badge" />
+    <img
+      v-if="isSeleted"
+      :src="require('../assets/checkmark.png')"
+      class="badge"
+    />
+    <img
+      v-else
+      :src="require('../assets/checkmark-inactive.png')"
+      class="badge"
+    />
     <img :src="image" />
-    <h3 id="drinkName">{{drink.name}}</h3>
+    <h3 id="drinkName">{{ drink.name }}</h3>
   </div>
 </template>
 

@@ -1,11 +1,14 @@
 <template>
   <section v-if="loaded" class="main">
     <div class="dish">
-      <div class="image" :style="{ 'background-image': 'url(' + dish.strMealThumb + ')' }" />
+      <div
+        class="image"
+        :style="{ 'background-image': 'url(' + dish.strMealThumb + ')' }"
+      />
       <div class="description">
         <div class="text">
-          <h3>{{dish.strMeal}}</h3>
-          <i>{{dish.strArea}}, {{dish.strCategory}}</i>
+          <h3>{{ dish.strMeal }}</h3>
+          <i>{{ dish.strArea }}, {{ dish.strCategory }}</i>
         </div>
         <button @click="generateNew" id="genereateNew">Genereate new</button>
       </div>
@@ -26,7 +29,7 @@ export default {
   },
   methods: {
     async generateNew() {
-      const data = await this.$store.dispatch("getRandomDish");
+      await this.$store.dispatch("getRandomDish");
     }
   },
   computed: {
@@ -56,8 +59,7 @@ export default {
   justify-content: space-between;
 
   #genereateNew {
-	margin: 1em 0 0 0;
-	
+    margin: 1em 0 0 0;
   }
 }
 </style>

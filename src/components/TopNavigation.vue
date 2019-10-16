@@ -1,10 +1,10 @@
 <template>
   <nav>
     <img class="logo" :src="require('../assets/logo.svg')" />
-    <router-link :to="{ name: 'home'} ">Restaurenter</router-link>
-    <router-link :to="{ name: 'home'} ">Produkter</router-link>
-    <router-link :to="{ name: 'home'} ">Nyhedsbrev</router-link>
-    <router-link :to="{ name: 'home'} ">Kontakt</router-link>
+    <router-link :to="{ name: 'home' }">Restaurenter</router-link>
+    <router-link :to="{ name: 'home' }">Produkter</router-link>
+    <router-link :to="{ name: 'home' }">Nyhedsbrev</router-link>
+    <router-link :to="{ name: 'home' }">Kontakt</router-link>
   </nav>
 </template>
 
@@ -39,5 +39,3 @@ nav {
   }
 }
 </style>
-
-

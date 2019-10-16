@@ -11,11 +11,15 @@
     </div>
     <div class="arrows">
       <img
-        :class="{arrow:true, left:true, greyed:disabled}"
+        :class="{ arrow: true, left: true, greyed: disabled }"
         :src="require('@/assets/arrow-left.png')"
         @click="scroll(-1)"
       />
-      <img class="arrow right" :src="require('@/assets/arrow-right.png')" @click="scroll(1)" />
+      <img
+        class="arrow right"
+        :src="require('@/assets/arrow-right.png')"
+        @click="scroll(1)"
+      />
     </div>
   </main>
 </template>
@@ -88,9 +92,9 @@ main {
     position: absolute;
     top: 40%;
     cursor: pointer;
-	transition: transform 0.2s;
-	filter: saturate(0);
-	filter: brightness(0.1);
+    transition: transform 0.2s;
+    filter: saturate(0);
+    filter: brightness(0.1);
   }
   .arrow:hover {
     transform: scale(1.1);
