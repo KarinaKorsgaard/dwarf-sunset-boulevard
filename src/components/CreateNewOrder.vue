@@ -24,7 +24,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 #createOrderButton {
-  margin: 20px 0 0 0;
+  margin: 20px 0 40px 0;
+  padding-left: 20px;
+  padding-right: 20px;
   @include large {
     margin-left: 20px;
   }
